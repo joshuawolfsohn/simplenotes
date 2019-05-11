@@ -1,8 +1,0 @@
-C:\Users\Joshua Wolfsohn\Desktop\Development\updater\Simple Notes Updater\Simple Notes Updater\bin\Debug\Simple Notes Updater.exe.config
-C:\Users\Joshua Wolfsohn\Desktop\Development\updater\Simple Notes Updater\Simple Notes Updater\bin\Debug\Simple Notes Updater.exe
-C:\Users\Joshua Wolfsohn\Desktop\Development\updater\Simple Notes Updater\Simple Notes Updater\bin\Debug\Simple Notes Updater.pdb
-C:\Users\Joshua Wolfsohn\Desktop\Development\updater\Simple Notes Updater\Simple Notes Updater\obj\Debug\Simple_Notes_Updater.Properties.Resources.resources
-C:\Users\Joshua Wolfsohn\Desktop\Development\updater\Simple Notes Updater\Simple Notes Updater\obj\Debug\Simple Notes Updater.csproj.GenerateResource.cache
-C:\Users\Joshua Wolfsohn\Desktop\Development\updater\Simple Notes Updater\Simple Notes Updater\obj\Debug\Simple Notes Updater.csproj.CoreCompileInputs.cache
-C:\Users\Joshua Wolfsohn\Desktop\Development\updater\Simple Notes Updater\Simple Notes Updater\obj\Debug\Simple Notes Updater.exe
-C:\Users\Joshua Wolfsohn\Desktop\Development\updater\Simple Notes Updater\Simple Notes Updater\obj\Debug\Simple Notes Updater.pdb

@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
-using IWshRuntimeLibrary;
 
 namespace Simple_Notes
 {
@@ -18,16 +17,6 @@ namespace Simple_Notes
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-
-            object shDesktop = (object)"Desktop";
-            WshShell shell = new WshShell();
-            string shortcutAddress = (string)shell.SpecialFolders.Item(ref shDesktop) + @"\simplenotes.lnk";
-            IWshShortcut shortcut = (IWshShortcut)shell.CreateShortcut(shortcutAddress);
-            shortcut.Description = "Simple Notes program by Joshua Wolfsohn";
-            shortcut.TargetPath = @"C:\simplenotes\simplenotes.exe";
-            shortcut.IconLocation = @"C:\simplenotes\favicon.ico";
-            shortcut.WorkingDirectory = @"C:\simplenotes";
-            shortcut.Save();
 
             try
             {

@@ -6,6 +6,7 @@ using System.Net;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using IWshRuntimeLibrary;
 
 namespace Simple_Notes_Updater
 {
@@ -25,8 +26,19 @@ namespace Simple_Notes_Updater
             webClient.DownloadFile("https://github.com/codename13/simplenotes/blob/master/release/System.Data.SQLite.dll?raw=true", "C:\\simplenotes\\System.Data.SQLite.dll");
             webClient.DownloadFile("https://github.com/codename13/simplenotes/blob/master/release/x64/SQLite.Interop.dll?raw=true", "C:\\simplenotes\\x64\\SQLite.Interop.dll");
             webClient.DownloadFile("https://github.com/codename13/simplenotes/blob/master/release/x86/SQLite.Interop.dll?raw=true", "C:\\simplenotes\\x86\\SQLite.Interop.dll");
-            MessageBox.Show("Updated Simple Notes.");
-            Process.Start("C:\\simplenotes\\simplenotes.exe");
+
+            object shDesktop = (object)"Desktop";
+            WshShell shell = new WshShell();
+            string shortcutAddress = (string)shell.SpecialFolders.Item(ref shDesktop) + @"\simplenotes.lnk";
+            IWshShortcut shortcut = (IWshShortcut)shell.CreateShortcut(shortcutAddress);
+            shortcut.Description = "Simple Notes program by Joshua Wolfsohn";
+            shortcut.TargetPath = @"C:\simplenotes\simplenotes.exe";
+            shortcut.IconLocation = @"C:\simplenotes\favicon.ico";
+            shortcut.WorkingDirectory = @"C:\simplenotes";
+            shortcut.Save();
+
+            MessageBox.Show("Installed latest Simple Notes.");
+            Process.Start(shortcutAddress);
             Application.Exit();
         }
     }
