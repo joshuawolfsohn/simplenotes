@@ -1,5 +1,5 @@
 
-Simple Notes v1.0.1 - Created by Joshua Wolfsohn
+Simple Notes v2.0.0 - Created by Joshua Wolfsohn
 
 A simple and free WinForms-based text editor. Stores all notes in a password-protected SQLite database.
 
