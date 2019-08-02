@@ -33,7 +33,15 @@ namespace Simple_Notes
             } else
             {
                 SQLiteCommand command = new SQLiteCommand("SELECT [content] FROM [notes] where [index] = " + checkedListBox1.SelectedIndex, sqlConn);
-                textBox1.Text = command.ExecuteScalar().ToString();
+
+
+                FileStream fileStream = new FileStream("C:\\simplenotes\\cache.rtf", FileMode.Open);
+                using (StreamWriter textWriter = new StreamWriter(fileStream))
+                {
+                    textWriter.Write(command.ExecuteScalar().ToString());
+                }
+
+                richTextBox1.LoadFile("C:\\simplenotes\\cache.rtf", RichTextBoxStreamType.RichText);
                 button3.Enabled = true;
             }
 
@@ -41,9 +49,9 @@ namespace Simple_Notes
 
         private void NoteExport_Load(object sender, EventArgs e)
         {
-            textBox1.ReadOnly = true;
-            textBox1.ShortcutsEnabled = false;
-            textBox1.ScrollBars = ScrollBars.Vertical;
+            richTextBox1.ReadOnly = true;
+            richTextBox1.ShortcutsEnabled = false;
+            richTextBox1.ScrollBars = RichTextBoxScrollBars.Vertical;
 
             button3.Enabled = false;
 
@@ -120,7 +128,7 @@ namespace Simple_Notes
                             dataAdapter.Fill(dataTable);
                             foreach (DataRow dataRow in dataTable.Rows)
                             {
-                                File.WriteAllText(fbd.SelectedPath + "\\" + dataRow["title"].ToString() + ".txt", "Original creation date " + dataRow["creation"].ToString() + Environment.NewLine + dataRow["content"].ToString());
+                                File.WriteAllText(fbd.SelectedPath + "\\" + dataRow["title"].ToString() + ".rtf", dataRow["content"].ToString());
                             }
                         }
                     }
@@ -132,6 +140,11 @@ namespace Simple_Notes
             {
                 MessageBox.Show("Error!");
             }
+        }
+
+        private void richTextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

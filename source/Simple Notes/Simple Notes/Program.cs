@@ -28,9 +28,9 @@ namespace Simple_Notes
                 {
                     Application.Run(new CreateDB());
                 }
-            } catch
+            } catch (Exception ex)
             {
-                MessageBox.Show("Missing DLLs!");
+                MessageBox.Show(ex.ToString());
             }
 
         }

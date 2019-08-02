@@ -118,6 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="textBox1.Text" xml:space="preserve">
-    <value>This software was created by Joshua Wolfsohn, an 18 year old Canadian student from the University of Waterloo. It is written in C# and uses the System.Data.SQLite library to read and write notes to and from a simple SQLite3 database file. </value>
+    <value>This software was created by Joshua Wolfsohn, a 19 year old Canadian student from the University of Waterloo. It is written in C# and uses the System.Data.SQLite library to read and write Rich Text notes to and from a simple SQLite3 database file. </value>
   </data>
 </root>

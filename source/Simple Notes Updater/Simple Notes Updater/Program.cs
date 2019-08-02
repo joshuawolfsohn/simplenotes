@@ -21,11 +21,11 @@ namespace Simple_Notes_Updater
             Directory.CreateDirectory("C:\\simplenotes\\x86");
             Directory.CreateDirectory("C:\\simplenotes\\x64");
             WebClient webClient = new WebClient();
-            webClient.DownloadFile("https://github.com/codename13/simplenotes/blob/master/release/simplenotes.exe?raw=true", "C:\\simplenotes\\simplenotes.exe");
-            webClient.DownloadFile("https://github.com/codename13/simplenotes/blob/master/release/favicon.ico?raw=true", "C:\\simplenotes\\favicon.ico");
-            webClient.DownloadFile("https://github.com/codename13/simplenotes/blob/master/release/System.Data.SQLite.dll?raw=true", "C:\\simplenotes\\System.Data.SQLite.dll");
-            webClient.DownloadFile("https://github.com/codename13/simplenotes/blob/master/release/x64/SQLite.Interop.dll?raw=true", "C:\\simplenotes\\x64\\SQLite.Interop.dll");
-            webClient.DownloadFile("https://github.com/codename13/simplenotes/blob/master/release/x86/SQLite.Interop.dll?raw=true", "C:\\simplenotes\\x86\\SQLite.Interop.dll");
+            webClient.DownloadFile("https://github.com/joshuawolfsohn/simplenotes/blob/master/release/simplenotes.exe?raw=true", "C:\\simplenotes\\simplenotes.exe");
+            webClient.DownloadFile("https://github.com/joshuawolfsohn/simplenotes/blob/master/release/favicon.ico?raw=true", "C:\\simplenotes\\favicon.ico");
+            webClient.DownloadFile("https://github.com/joshuawolfsohn/simplenotes/blob/master/release/System.Data.SQLite.dll?raw=true", "C:\\simplenotes\\System.Data.SQLite.dll");
+            webClient.DownloadFile("https://github.com/joshuawolfsohn/simplenotes/blob/master/release/x64/SQLite.Interop.dll?raw=true", "C:\\simplenotes\\x64\\SQLite.Interop.dll");
+            webClient.DownloadFile("https://github.com/joshuawolfsohn/simplenotes/blob/master/release/x86/SQLite.Interop.dll?raw=true", "C:\\simplenotes\\x86\\SQLite.Interop.dll");
 
             object shDesktop = (object)"Desktop";
             WshShell shell = new WshShell();

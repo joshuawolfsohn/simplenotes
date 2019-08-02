@@ -39,9 +39,10 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(245, 21);
+            this.textBox1.Location = new System.Drawing.Point(218, 17);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(148, 26);
+            this.textBox1.Size = new System.Drawing.Size(132, 22);
             this.textBox1.TabIndex = 0;
             this.textBox1.UseSystemPasswordChar = true;
             this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
@@ -50,17 +51,18 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(61, 21);
+            this.label1.Location = new System.Drawing.Point(54, 17);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 20);
+            this.label1.Size = new System.Drawing.Size(159, 17);
             this.label1.TabIndex = 1;
             this.label1.Text = "Enter current password:";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(245, 109);
+            this.button1.Location = new System.Drawing.Point(218, 87);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(148, 31);
+            this.button1.Size = new System.Drawing.Size(132, 25);
             this.button1.TabIndex = 2;
             this.button1.Text = "OK";
             this.button1.UseVisualStyleBackColor = true;
@@ -68,9 +70,10 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(245, 63);
+            this.textBox2.Location = new System.Drawing.Point(218, 50);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 26);
+            this.textBox2.Size = new System.Drawing.Size(132, 22);
             this.textBox2.TabIndex = 3;
             this.textBox2.UseSystemPasswordChar = true;
             this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
@@ -79,9 +82,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(18, 63);
+            this.label2.Location = new System.Drawing.Point(16, 50);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(221, 20);
+            this.label2.Size = new System.Drawing.Size(198, 17);
             this.label2.TabIndex = 4;
             this.label2.Text = "Enter current password again:";
             // 
@@ -89,18 +92,19 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.Color.Red;
-            this.label3.Location = new System.Drawing.Point(213, 158);
+            this.label3.Location = new System.Drawing.Point(189, 126);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(207, 20);
+            this.label3.Size = new System.Drawing.Size(184, 17);
             this.label3.TabIndex = 5;
             this.label3.Text = "Incorrect password entered.";
             this.label3.Visible = false;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(74, 109);
+            this.button2.Location = new System.Drawing.Point(66, 87);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(148, 31);
+            this.button2.Size = new System.Drawing.Size(132, 25);
             this.button2.TabIndex = 6;
             this.button2.Text = "Cancel";
             this.button2.UseVisualStyleBackColor = true;
@@ -108,9 +112,9 @@
             // 
             // RemovePassword
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(440, 207);
+            this.ClientSize = new System.Drawing.Size(391, 166);
             this.ControlBox = false;
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label3);
@@ -119,8 +123,9 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "RemovePassword";
-            this.Text = "Remove Password Protection";
+            this.Text = "Simple Notes - Remove Password Protection";
             this.Load += new System.EventHandler(this.RemovePassword_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

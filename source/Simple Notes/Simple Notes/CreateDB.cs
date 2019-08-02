@@ -53,6 +53,10 @@ namespace Simple_Notes
                     command.ExecuteNonQuery();
                     command.CommandText = "INSERT INTO [config] ([index],[parameter],[value]) VALUES ('2','disableclipboard','false')";
                     command.ExecuteNonQuery();
+
+                    command.CommandText = "INSERT INTO [config] ([index],[parameter],[value]) VALUES ('3','theme','light')";
+                    command.ExecuteNonQuery();
+
                     sqlConn.Close();
 
                     Application.Restart();
